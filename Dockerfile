@@ -49,7 +49,7 @@ RUN mkdir -p /output/usr/bin && \
     go build -o /output/${BIN} \
     -ldflags "${LDFLAGS}" ${PKG}/cmd/${BIN}
 
-FROM ubuntu:focal
+FROM ubuntu:20.10
 
 LABEL maintainer="Nolan Brubaker <brubakern@vmware.com>"
 
